@@ -1,0 +1,21 @@
+h3 {
+  color:red;
+  font-family: sans-serif;
+}
+
+p{
+  font-size:16px;
+}
+
+li{
+  color:pink;
+
+}
+.my-title{
+  font-size:32px;
+  font-family:fantasy;
+}
+
+#very-special-sentence{
+  background-color: yellow;
+}

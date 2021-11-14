@@ -1,0 +1,58 @@
+html{
+  height:100%;
+}
+
+body,p,h3{
+  margin:0;
+}
+
+
+.box{
+  background-color:gray;
+  width:200px;
+  height:180px;
+
+  /*borde-width:10px;
+  border-color:red;
+  border-style:dotted;*/
+
+  margin:50px;
+  padding:20px;
+}
+
+.hidden-box{
+  background-color:red;
+
+ /* different from display:bloch or none */
+  visibility:hidden;
+  width:200px;
+  height:180px;
+
+  margin:50px;
+  padding:20px;
+}
+.special-box{
+  background-color:pink;
+
+  position:absolute;
+  right:200px;
+  top:100px;
+
+  width:200px;
+  height:180px;
+
+  /*borde-width:10px;
+  border-color:red;
+  border-style:dotted;*/
+
+  margin:50px;
+  padding:20px;
+}
+
+.title{
+  background-color: green;
+}
+
+.description{
+  background-color: pink;
+}
