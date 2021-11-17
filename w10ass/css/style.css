@@ -1,0 +1,25 @@
+html, body {
+  margin: 10;
+  padding: 0;
+}
+
+canvas{
+  display:block;
+}
+
+#mycontainer{
+
+  position:absolute;
+  left:200px;
+  top:100px;
+}
+
+#box{
+  background-color: rgb(0,255,255);
+  width:100px;
+  height:100px;
+
+  position:absolute;
+  left: 10px;
+  top:10px;
+}
