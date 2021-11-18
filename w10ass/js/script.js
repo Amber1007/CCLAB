@@ -1,30 +1,35 @@
-let x =0;
+let y = 0;
+let show = true;
+
+
 function setup() {
   let canvas=createCanvas(400, 500);
   canvas.parent="mycontainer";
   background(0);
-
-
 }
 
 function draw() {
+  background(0);
+  if (show == true) {
+      drawRabbit();
+  }
+}
 
-
+function changeShow() {
+  show = !show;
 }
 
 function drawRabbit(){
-  console.log("clicked!");
-
-  translate(200,200);
-   drawEar(-50,-10,360,365,0.25);
-   drawEar(50,-10,0,5,3.75);
-   drawHead(0,10);
-   drawcircle(-15,0);
-   drawcircle(15,0);
-   drawEye1(0,-2);
-   drawEye2(0,-2);
-   ellipse(0,20,25,15);
-
+  //console.log("clicked!");
+  translate(200,200+y);
+  drawEar(-50,-10,360,365,0.25);
+  drawEar(50,-10,0,5,3.75);
+  drawHead(0,10);
+  drawcircle(-15,0);
+  drawcircle(15,0);
+  drawEye1(0,-2);
+  drawEye2(0,-2);
+  ellipse(0,20,25,15);
 }
 
 function drawEar(x1,y1,a1,a2,r){
@@ -58,7 +63,7 @@ function drawEye1(x3,y3){
   circle(x3,y3,6);
   pop();
 }
-  function drawEye2(x4,y4){
+function drawEye2(x4,y4){
 
   push();
   translate(15,-2);
@@ -68,10 +73,9 @@ function drawEye1(x3,y3){
   circle(x4,y4,6);
   pop();
 
-  }
+}
 
 
-
-  function goup(){
-    x=30;
-  }
+function goup(){
+  y -= 5;
+}
