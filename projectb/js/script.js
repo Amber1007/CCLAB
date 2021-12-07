@@ -4,7 +4,6 @@ let b =0;
 let cars =[];
 let bicycles=[];
 let walks=[];
-
 let counter=0;
 
 let description=document.getElementById('description');
@@ -134,6 +133,10 @@ function draw(){
     w.check();
   }
 
+
+
+
+
   for (let i1 = cars.length-1;i1>=0;i1--){
     let c = cars[i1];
     if (c.isDone==true){
@@ -153,8 +156,6 @@ function draw(){
     }
   }
 
-
-
 }
 
 
@@ -173,7 +174,6 @@ function draw(){
   function walk(){
     walks.push(new Walk(random(390,450),random(400,600)));
   }
-
 
 class Car{
   constructor(x1,y1){
