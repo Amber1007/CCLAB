@@ -4,7 +4,7 @@ html, body {
   font-family: fantasy;
   font-size: 16px;
   background-color: rgb(201,254,221);
-  
+
 }
 
 h3{
@@ -21,7 +21,7 @@ h3{
   height: 600px;
 }
 #choices{
- background-color: rgb(255,255,255);
+ background-color: rgb(201,254,221);
  width:750px;
  height:100px;
 
